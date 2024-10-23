@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form  id="Registrationform" action="#" method="post">
+      
+      <!-- Name Field -->
+      <label for="name">Name(at least 3 characters):</label>
+      <input type="text" id="name" name="name" minlength="3" required>
+      <span id="nameError" class="error-message"></span>
+      
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="passwordError" class="error"></span>
+
+      <!--confirmpassword-->
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <span class="error" id="confirmPasswordError"></span>
+      
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error-message" id="emailError"></span>
+
+      <!--phone number Field-->
+      <label for="phone">phone number(10 digits)</label>
+      <input type="phone" id="phone" name="phone" required>
+      <span class="error" id="phoneError"></span>
+
+      <!-- Gender Field -->
+      <label>Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+      
+      <!-- Agree to Terms -->
+      <div class="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms & conditions</label>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+      
+    </form>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
